@@ -1,24 +1,42 @@
-# vue-project
+# 💻 vue-project
 
-## Project setup
-```
-yarn install
-```
+This is my first vue project, this is part of Web Development subject at Computer Engineering
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
+### 🔨 Installation
 
-### Compiles and minifies for production
-```
-yarn build
-```
+To run this project, you must install all dependecies running the command below inside the repo, then just start the project.
 
-### Lints and fixes files
+```sh
+$ npm install
 ```
-yarn lint
+or
+```sh
+$ yarn
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+after installing all dependecies run this command to start the application:
+
+```sh
+$ npm run serve
+```
+or
+```sh
+$ yarn serve
+```
+
+Then the project will start in localhost at:
+
+```sh
+localhost:8080
+```
+
+### 👁 Demonstration
+
+![Order demonstration](https://i.imgur.com/bN3Puvk.png)
+
+
+### 📚 About
+
+Made with ❤ by Leandro Ciric
+
+
