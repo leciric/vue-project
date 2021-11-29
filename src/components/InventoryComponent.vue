@@ -1,61 +1,32 @@
 <template>
   <v-container>
     <v-row class="text-center">
-      <v-col cols="12">
-        <v-img
-          :src="require('../assets/react-icon.png')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
 
-      <v-col cols="12">
-        <router-link to="/profile">Go to Profile</router-link>
-      </v-col>
+    <h1>This is user inventory</h1> 
 
-      <v-col cols="12">
-        <router-link to="/dontknow">Go to Dontknow</router-link>
-      </v-col>
-      <v-col cols="12">
-        <router-link to="/inventory"
-          >Go to Inventory (here are the mapping with store)</router-link
-        >
-      </v-col>
-      <v-col cols="12">
-        <router-link to="/about">Go to About</router-link>
-      </v-col>
 
-      <v-col cols="12">
-        <strong>WHO WINS?</strong>
-        <v-img
-          :src="require('../assets/lets-fight.png')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
+    <div v-for="item in items" :key="item.id">
+    <v-card elevation="2" outlined shaped tile>
+      <v-card-title>{{item.name}}</v-card-title>
+    </v-card>
+    
+    </div>
 
-      <v-col cols="12">
-        <strong>WHO WINS?</strong>
-        <v-img
-          :src="require('../assets/pokemon-fighting.gif')"
-          class="my-3"
-          contain
-          height="200"
-        />
-      </v-col>
+
+
+
+
     </v-row>
   </v-container>
 </template>
 
 <script>
-import { mapState } from "vuex";
+import { mapState } from 'vuex'
 
 export default {
-  name: "ReactApplication",
+  name: "ProfileComponent",
 
-  computed: mapState(["items"]),
+  computed: mapState(['items']),
 
   data: () => ({
     ecosystem: [

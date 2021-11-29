@@ -11,5 +11,6 @@
     components: {
       ReactApplication,
     },
+
   }
 </script>

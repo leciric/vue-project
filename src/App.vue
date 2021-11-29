@@ -54,11 +54,11 @@
       
     </v-app-bar>
 
-    <v-content
+    <v-main
       color="#fafafa"
     >
-      <ReactApplication/>
-    </v-content>
+    <router-view></router-view>
+    </v-main>
     <v-footer 
       padless
       color="#f4f4f4"
@@ -78,12 +78,9 @@
 </template>
 
 <script>
-import ReactApplication from './components/ReactApplication';
 export default {
   name: 'App',
-  components: {
-    ReactApplication,
-  },
+
   data () {
     return{
       drawer: false,
